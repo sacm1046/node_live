@@ -1,15 +1,7 @@
 const db = require("../database/db.json");
 
 const postProduct = (req, res) => {
-  const ids = db.map((product) => product.id);
-  const id = Math.max(...ids) + 1;
-  db.push({
-    id: id,
-    name: req.body.name,
-  });
-  return res.status(201).json({
-    success: "Producto creado con éxito",
-  });
+  
 };
 
 const getProducts = (req, res) => {
