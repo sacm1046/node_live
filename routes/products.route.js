@@ -6,7 +6,7 @@ const {
     getProductById,
     patchProductById,
     deleteProductById
-} = require('../controllers/products');
+} = require('../controllers/products.controller');
 
 router.post('/product',postProduct);
 router.get('/products',getProducts);
